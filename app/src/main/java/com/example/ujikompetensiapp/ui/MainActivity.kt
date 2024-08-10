@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.ArrayAdapter
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ujikompetensiapp.database.DatabaseHelper
 import com.example.ujikompetensiapp.database.Mahasiswa
@@ -82,9 +81,7 @@ class MainActivity : AppCompatActivity() {
         mahasiswaList = db.getAllMahasiswa()
         titlesList.clear()
         for (mahasiswa in mahasiswaList) {
-            titlesList.add(mahasiswa.nim + "\n" + mahasiswa.nama + "\n" + mahasiswa.tglLahir
-                            + "\n" + mahasiswa.jenisKelamin + "\n" + mahasiswa.alamat
-                            + "\n" + mahasiswa.date)
+            titlesList.add(mahasiswa.nim + "\n" + mahasiswa.nama + "\n" + mahasiswa.date)
         }
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, titlesList)
         binding.listView.adapter = adapter
