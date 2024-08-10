@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UjiKompetensiApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="informasi">
+        Aplikasi Kampusku merupakan aplikasi yang digunakan untuk menyimpan data mahasiswa.
+        User nantinya bisa Menambahkan, update, dan menghapus data mahasiswa.
+    </string>
+</resources>
